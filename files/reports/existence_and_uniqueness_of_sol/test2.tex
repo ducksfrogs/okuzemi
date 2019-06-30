@@ -1,21 +1,20 @@
 \documentclass[fleqn]{jsarticle}
-\usepackage[dvipdfmx]{graphicx}
-
-\usepackage{amsmath}
-\usepackage{nccmath}
+\renewcommand{\baselinestretch}{3}
 \begin{document}
 \setcounter{section}{1}
 \setcounter{subsection}{5}
 \section{}
-\subsection{解の存在と}
-\noindent This is left-aligned:
-\begin{align}
-   \int \frac{1}{1+x^2}\, dx = \arctan x + C.
-\end{align}
-This is centered:
-\begin{ceqn}
-\begin{align}
-   \int \frac{1}{1+x^2}\, dx = \arctan x + C.
-\end{align}
-\end{ceqn}
+\subsection{解の存在と一意性}
+\begin{eqnarray}
+  y '' + p(x)y' +q(x) &=& 0 \\
+  y(x_0) = k_0, \hspace{1zw} y'(x_0) = k_1 \\
+  y = c_1y_1 + c_2y_2 (c_1, c_2は任意) \\
+  k_1y_1(x)+k_2y_2(x) = 0 , k_1 = 0, k_2 = 0 \\
+  (a) y_1 = ky_2, (b) y_2 = ly_1 \\
+  W(x,y) = y_1y'_2 - y'_2y_1
+\end{eqnarray}
+$$ W(y_1,y_2)= y_1y'_2 -y_2y'_1 = ky_2y'_2 - y_2ky'_2 =0 $$
+\begin{eqnarray}
+  k_1y_1(x_0) + k_2y_2(x_0) =0 , \hspace{1zw} k_1y'_1(x_0) + k_2y'_2(x_0) =0
+\end{eqnarray}
 \end{document}
