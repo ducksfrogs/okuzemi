@@ -1,22 +1,28 @@
 \documentclass[uplatex]{jsarticle}
 \usepackage[dvipdfmx]{graphicx}
+\renewcommand{\baselinestretch}{3}
 \begin{document}
 初期値問題
 \setcounter{section}{17}
 \section{}
-$$ (9x^2D^2+3xD+I)y=0,\hspace{1zw} y(1)=1, y'(1)=0 $$
-$$ 9x^2D^2y+3xDy+Iy =0$$
-$$ 9x^2y'' +3xy'+y =0 $$
-$$ y = x^m, \hspace{1zw} y' = mx^{m-1}, \hspace{1zw} y'' = m(m-1)x^{m-2} $$
+\begin{eqnarray}
+  (9x^2D^2+3xD+I)y&=&0,\hspace{1zw} y(1)=1, y'(1)=0 \\
+  9x^2D^2y+3xDy+Iy &=&0 \\
+  9x^2y'' +3xy'+y &=&0 
+\end{eqnarray}
 $$ 9m(m-1)x^m +3mx^m + x^m =0 $$
-$$ 9m^2 -6m +1 =0$$
-$$ m= \frac{1}{3} $$
-$$ y_1 = x^{\frac{1}{3}}重解, \hspace{1zw} y_2 = x^{\frac{1}{3}}logx $$
-$$ y = x^{\frac{1}{3}}(c_1+c_2lnx), \hspace{1zw} y' =\frac{1}{3}(c_1+c_2lnx) +c_2x^-{\frac{2}{3}} $$
-$$ c_1 = 1 \hspace{1zw} c_2 = -\frac{1}{3} $$
+\begin{eqnarray}
+  9m^2 -6m +1 &=&0 \\
+  m= \frac{1}{3} \hspace{1zw} 重解
+\end{eqnarray}
+$$ y_1 = x^{\frac{1}{3}}, \hspace{1zw} y_2 = x^{\frac{1}{3}}logx $$
+\begin{eqnarray}
+  y &=& x^{\frac{1}{3}}(c_1+c_2lnx) \\ y' &=&\frac{1}{3}(c_1+c_2lnx) +c_2x^{\-frac{2}{3}} 
+\end{eqnarray}
+$$ c_1 = 1, \hspace{1zw} c_2 = -\frac{1}{3} $$
 $$ y = x^{\frac{1}{3}}(1+\frac{1}{3}lnx) $$
-\newpage
 
+\newpage
 \includegraphics{./0_100.png}
 
 \includegraphics{./0_7.png}
